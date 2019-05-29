@@ -44,16 +44,15 @@
             </div>
         </div>
     </div>
-    <!--site key: 6LeiSKMUAAAAAMVPZY_EhHb41l9c4UTqF8sYJbUD -->
-    <!--secret key: 6LeiSKMUAAAAAPeGKpduyGO9oTGkzkqpHgl-_bvF -->
+
 @endsection
 
-<script src="https://www.google.com/recaptcha/api.js?render=6LeiSKMUAAAAAMVPZY_EhHb41l9c4UTqF8sYJbUD"></script>
+<script src="https://www.google.com/recaptcha/api.js?render="></script>
 <script>
     grecaptcha.ready(function() {
         // do request for recaptcha token
         // response is promise with passed token
-        grecaptcha.execute('6LeiSKMUAAAAAMVPZY_EhHb41l9c4UTqF8sYJbUD', {action:'form_avis'})
+        grecaptcha.execute('', {action:'form_avis'})
             .then(function(token) {
                 // add token value to form
                 document.getElementById('g-recaptcha-response').value = token;
